@@ -1,10 +1,11 @@
 *{
-	font-family: 'Josephin Sans',sans-serif;
 	box-sizing:border-box;
 }
-body,html{
-	margin:0;padding:0;
-	width:100%;
+body{
+	margin:auto;padding:0;
+	left:0;right:0;
+	background: #96281B;
+	text-align: center;
 }
 .absolute-center{
 	position: absolute;
@@ -58,21 +59,10 @@ a:hover {
     color: #000;
 	text-decoration: none;
 }
-
-section{
-	padding-bottom:20px;
-	transform-style: preserve-3d;
-	transform:translateZ(0);
-}
 button{
 	border:none;
 	box-shadow:1px 1px 2px #000;
 	padding:10px;
-}
-.heading{
-	padding:0px 10px;
-	font-size:30px;
-	font-family:'Anton',sans-serif;
 }
 .box-shadow{
 	box-shadow:0px 0px 4px #000;
@@ -93,7 +83,6 @@ button{
 }
 .section-header{
 	font-family:'Anton',sans-serif;
-	background:rgba(0,0,0,0.5);
 	padding:20px;
 	margin-top:100px;
 	margin-bottom:30px;
@@ -259,155 +248,20 @@ a.page-scroll{
 .navbar-default .navbar-nav>li>a.active{
 	color:#000;
 }
-/** Styles Menu specially for tablet view **/
-@media all and (min-width: 768px) and (max-width: 992px){ 
-  .nav{
-	  float:none;
-  }
-  .nav>li>a{
-	  padding:15px 6px;
-  }
-  a.page-scroll{
-	font-size:20px;
-  }
-  
-  .navcontainer{
-	margin-left: 5px;
-	margin-right: 5px;
-  }
-
-}
-/** Tablet Styles End **/
-
-/** Cover Section **/
-#home{
-	height:100%;
-	padding-top:100px;
-	background: url("../images/bgrnd.jpeg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	overflow-x:hidden;
-	transform: translate3d(0,0,-1px);
-}
-#home .container{
-	position:relative;
-	height:100%;
-}
-#home .cover-content{
-	width:500px;
-	height:300px;
-	text-align:center;
-}
-#home .coverLogo{
-	width:100%;
-	animation-name:fade;
-	animation-duration:4s;
-	animation-timing-function:linear;
-}
-@keyframes fade{
-	0%{
-		opacity:0;
-	}
-	100%{
-		opacity:1;
-	}
-}
-#home .motto{
-	float:right;
-	font-family: 'Anton', sans-serif;
-	font-style:italic;
-	font-size:18px;
-	font-weight:100;
-}
-#home .scrollMore{
-	clear:both;
-	color: ghostwhite;
-	font-size:28px;
-	font-family: 'Lobster', cursive;
-	margin-top: 30px;
-	animation-name:fade;
-	animation-duration:3s;
-	animation-timing-function:linear;
-}
-#home .scrollIcon{
-	color: ghostwhite;
-	padding:0px;
-}
-@media all and (max-width: 768px){
-	#home .cover-content{
-		width:290px;
-		height:200px;
-	}
-}
-
-/** Intro Section **/
-#intro{
-	background:#ECF0F1;
-	padding:60px 10px 100px 10px;
-	height:auto;
-	color:#000;
-}
-#intro .siteAboutContainer{
-    padding-top: 35px;
-	font-family: 'Lobster', cursive;
-	font-size:48px;
-	padding-bottom: 20px;
-	color:#000;
-}
-@media screen and (max-width:768px){
-	/** Mobile devices **/
-	#intro .siteAboutContainer{
-		font-size:35px;
-	}
-}
-#intro .description{
-	margin-top: 10px;
-	font-size:24px;
-	padding:4px 10px;
-	padding-left: 25px;
-	color:#000;
-}
-.servicesList{
-	margin-top: 10px;
-	margin-left:40px;
-}
-.servicesList li{
-	display:block;
-	position:relative;
-	margin-top:15px;
-	font-size:22px;
-	color:#000;
-}
+/**
 .servicesList li::before{
 	/** This class definition adds 'tick' using font awesome unicode
 		Pre-check that element li has 'fa' class or else blank boxes may be displayed
-	 **/
-	content:"\f00c";
+	content:"\f284";
 	position:absolute;
 	left:-22px;
 	width:10px;height:10px;
-	color:#000;
-	font-size:18px;
+	font-size:16px;
 }
-#joinNowBtn{
-	vertical-align:bottom;
-	width:100%;
-	font-weight:600;
-	font-size:25px;
-	padding-bottom: 20px;
-	padding-top: 20px;
-	margin-left: 10px;
-	color:#FFF;
-}
-@media all and (min-width:400px){
-	#joinNowBtn{
-		margin-top: 150px;
-	}
-}
+**/
 /** Events Section **/
 #events{
 	background:#4c667f;
-	box-shadow:inset 0px 1px 9px 5px #000;
 	padding-bottom:50px;
 }
 .eventsList{
@@ -426,6 +280,7 @@ a.page-scroll{
 	box-sizing:border-box;
 	color:#000;
 	text-align:center;
+	top:0;bottom: 0;
 }
 .youtubeBox{
 	padding:0px;
@@ -759,8 +614,6 @@ a.page-scroll{
 }
 /** Alumni Section **/
 #alumni{
-	background:#4c667f;
-	box-shadow:inset 0px 1px 9px 5px #000;
 	padding-bottom:50px;
 }
 #alumni .section-header{
@@ -798,28 +651,22 @@ a.page-scroll{
 	font-size:45px;
 }
 /** Team Section **/
-#team{
-	background:#d0dce8;
-	padding-bottom:50px;
-}
+
 #team .section-header{
-	margin-top:55px;
-	margin-bottom:55px;
 	color:#fff;
 }
 .teamBox{
 	position:relative;
 	width:180px;
-	height:100px;
-	padding:0px;
-	padding-top:50px;
+	height:180px;
+	padding:10px 2px;
 	text-align:center;
 	margin:30px 20px 40px 10px;
-	color:#FFF;
+	color:#000;
+	background: #FFF;
+	box-shadow: 0px 0px 6px #FFF;
 }
 .teamBox .teamPhotoContainer{
-	position:absolute;
-	top:-50px;
 	border-radius:50%;
 	border:5px solid #D4D4D4;
 	overflow:hidden;
@@ -843,7 +690,6 @@ a.page-scroll{
 #contact{
 	height:auto;
 	background:#4c667f;
-	box-shadow:inset 0px 1px 9px 5px #000;
 }
 #contact .section-header{
 	margin-top:20px;
