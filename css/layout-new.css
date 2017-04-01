@@ -1,0 +1,356 @@
+body{
+    background: #000;
+}
+#contentWrap{
+    width: 95%;
+}
+#mainHeader,
+#subHeader{
+    background: #FFF;
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Anton', sans-serif;
+}
+#subHeader{
+    position: fixed;
+    top:0;
+    width: inherit;
+    z-index: 99999;
+    display: none;
+    padding:5px;
+}
+#subHeader .logo{
+    width: 120px;
+}
+.container{
+    max-width: 100%;
+}
+#topBar{
+    width: 100%;
+    background: #000;
+    color: #FFF;
+    margin-bottom:5px;
+}
+#mainHeader span.mailSignup{
+    text-transform: uppercase;
+    font-family: 'Anton', sans-serif;
+    font-size: 15px;
+}
+#topBar a{
+    color:inherit;
+}
+#topBar a:hover{
+    color:rgba(255,255,255,0.5);
+}
+@media all and (max-width:470px){
+    #mailSignupContainer{
+        display: none;
+    }
+    #contactLinksContainer{
+        width: 100%;
+        text-align: center;
+    }
+}
+#contactLinksContainer-1,
+#contactLinksContainer-2{
+    float: right;
+}
+#contactLinksContainer-1 .icon-grey,
+#contactLinksContainer-2 .icon-grey{
+    font-size: 20px;
+    color:#FFF;
+    margin: 5px;
+    padding: 1px;
+}
+#contactLinksContainer-2 .icon-grey{
+    color: #000;
+    font-size: 23px;
+}
+#contactLinksContainer-1 div,{
+    width:30px;
+}
+#contactLinksContainer-2 div{
+    width: 35px;
+}
+.auto-center{
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0; 
+}
+.no-float{
+    float: none;
+}
+.navbar{
+    width: 100%;
+    min-height: 30px;
+    overflow: hidden;
+    margin: 7px auto;
+    box-shadow: none;
+    padding: 0;
+}
+.navbar li{
+    padding:5px;
+    float: none;
+    list-style-type: none;
+}
+.navbar-toggle{
+    width: 100%;
+    display: block;
+    float: none;
+}
+@media all and (min-width:768px){
+    .navbar-toggle{
+        display: none;
+    }
+    .navbar li{
+        display: inline;
+    }
+}
+.navbar li a{
+    padding: 0;
+    font-size: 20px;
+}
+
+#mainNav .logo{
+    width: 300px;
+    height: auto;
+}
+@media all and (max-width:400px){
+    #mainNav .logo{
+        width: 250px;
+    }
+}
+
+section{
+    width: 100%;
+    margin: 10px 0;
+    padding-bottom: 10px; 
+}
+section .container{
+    width: inherit;
+}
+#home{
+    width: 100%;
+    overflow: hidden;
+}
+#home .container{
+    padding: 0;
+}
+
+.slidesContainer{
+    width: 100%;
+    height: 600px;
+    text-align: center;
+}
+.slide{
+    text-align: center;
+    height: inherit;
+}
+.slide img{
+    margin: auto;
+    left: 0;
+    right: 0;
+    height: 700px;
+    width: 100%;
+}
+#intro{
+    background: url("../images/bg-1080p-5.jpg");
+    color: rgba(47,167,173,0.9);
+    background-attachment: fixed;
+    background-size: cover;
+}
+#intro .section-header{
+    color: rgba(47,167,173,0.9);
+    font-size: 70px;
+    font-family: 'Concert One', sans-serif;
+    background: transparent;
+    box-shadow: 0 0 0;
+    margin-top:0; 
+    animation-name: introHeaderHighlight;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite; 
+}
+@keyframes introHeaderHighlight{
+    from{
+        color: rgba(47,167,173,0.9);
+    }
+    to{
+        color: rgba(130,249,255,0.9);
+    }
+}
+#intro p.description{
+    color: rgba(130,249,255,1);
+    font-size: 18px;
+}
+#intro .siteAboutHistory p.description{
+    font-family: 'Sniglet', sans-serif;
+    font-size: 20px;
+}
+#intro .servicesList li{
+    position: relative;
+    color: rgba(130,249,255,0.9);
+    font-size: 16px;
+    padding-left:18px;
+}
+#intro .servicesList li .fa{
+    position: absolute;
+    left:0;
+    top:3px;
+}
+#joinNowBtn{
+    background: transparent;
+    border:2px solid rgba(47,167,173,0.9);
+    border-radius: 5px;
+    color: rgba(47,167,173,0.9);
+    width: 70%;
+    font-size: 20px;
+}
+#joinNowBtn:hover{
+    background: rgba(47,167,173,0.2);
+    color: rgba(130,249,255,0.9);
+}
+.headerContainer{
+    margin-bottom: 10px;
+}
+.section-header{
+    color: rgba(255,255,255,0.9);
+    background: transparent;
+    box-shadow: 0 0 0;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed',sans-serif;
+    margin:20px 0px 0px;
+    font-size: 30px;
+}
+
+#intro .subheader{
+    border-bottom:2px solid rgba(47,167,173,0.9);
+    padding:0;
+    margin:2px;
+    box-sizing: content-box;
+}
+#intro .heading{
+    font-size: 30px;
+    padding: 0;
+    font-family:'Roboto Condensed',sans-serif;
+}
+@media screen and (max-width:768px){
+	/** Mobile devices **/
+	#intro .siteAboutContainer{
+		font-size:30px;
+	}
+    #intro .heading{
+    font-size: 25px;
+    padding: 0;
+}
+}
+#events{
+    background: url("../images/bg-1080p-6.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    color: #000;
+}
+button{
+    background: #22313F;
+}
+.headerContainer{
+    border-bottom: 2px solid #000;
+    width: 55%;
+    clear: inherit;
+}
+@media all and (max-width:768px){
+    .headerContainer{
+        width: 100%;
+    }
+}
+#upcomingEventsHeader{
+    padding: 5px 0;
+    color: inherit;
+}
+
+#webinars{
+    background: url("../images/bg-1080p-4.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#webinars .headerContainer{
+    border-bottom-color: #FFF;
+}
+#webinars .slick-dots li button:before,
+#team .slick-dots li button:before,{
+    color: #FFF;
+}
+#webinars .slick-dots li.slick-active button:before,
+#team .slick-dots li.slick-active button:before{
+    color:#FFF;
+}
+#webinars .slick-arrow::before,
+#team .slick-arrow::before{
+    color:#000;
+}
+
+.logo-med{
+    width:auto;
+    height: auto;
+    max-height: 100px;
+    max-width: 160px;
+}
+.logo-sm{
+    width: auto;
+    height: auto;
+    max-height:50px;
+    max-width: 100px; 
+}
+#openSource{
+    background: url("../images/repeat-1.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+#openSourceListContainer{
+    display: table;
+    margin:5px auto;
+    left:0;right: 0;
+}
+#openSource .logoContainer,
+#eventsParticipate .logoContainer{
+    vertical-align: middle;
+    width: auto;
+    height: 100%;
+    box-sizing: content-box;
+}
+#openSource .section-header{
+    color: #000;
+}
+#eventsParticipate{
+    background: url("../images/bg-1080p-2.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+#eventsParticipate .section-header{
+    color: #000;
+}
+
+#alumni{
+    background: url("../images/bg-1080p-3.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+#team{
+	background: url("../images/bg-1080p-7.jpg");
+	padding-bottom:50px;
+    padding-top: 10px;
+	background-attachment: fixed;
+	background-size: cover;
+}
+#team .headerContainer{
+    border-bottom-color: #FFF;
+}
+#footer{
+    color:#FFF;
+}
+#footer .attribution{
+    vertical-align: middle;
+}
